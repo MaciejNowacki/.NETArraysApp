@@ -12,27 +12,28 @@ namespace ConsoleApplication1
         
         static void Main(string[] args)
         {      
-            Console.WriteLine(num.Length);
+            Console.WriteLine("Rozmiar: "+num.Length);
             printArray();
             add(1);
-            Console.WriteLine(num.Length);
+            Console.WriteLine("Rozmiar: " + num.Length);
             printArray();
             add(2);
-            Console.WriteLine(num.Length);
+            Console.WriteLine("Rozmiar: " + num.Length);
             printArray();
             add(3);
-            Console.WriteLine(num.Length);
+            Console.WriteLine("Rozmiar: " + num.Length);
             printArray();
             Console.WriteLine(getElement(2));
             setElement(2, 4);
-            Console.WriteLine(num.Length);
+            Console.WriteLine("Rozmiar: " + num.Length);
             printArray();
             setElement(10, 4);
-            Console.WriteLine(num.Length);
+            Console.WriteLine("Rozmiar: " + num.Length);
             printArray();
             add(3);
-            Console.WriteLine(num.Length);
+            Console.WriteLine("Rozmiar: " + num.Length);
             printArray();
+            Console.ReadLine();
         }
 
         static void add(int value)
@@ -68,18 +69,22 @@ namespace ConsoleApplication1
 
         static void setElement(int i, int value)
         {
-            resizeArrayTo(i+1);
+            if(num.Length < i)
+            {
+                resizeArrayTo(i + 1);
+            }
             num[i] = value;
             index = i + 1;
         }
 
         static void printArray()
         {
-            for(int i = 0; i < index; i++)
+            Console.WriteLine("-------- [START] -------");
+            for (int i = 0; i < index; i++)
             {
                 Console.WriteLine(num[i]);
             }
-            Console.WriteLine("------------------");
+            Console.WriteLine("--------- [STOP] -------");
         }
     }
 }
