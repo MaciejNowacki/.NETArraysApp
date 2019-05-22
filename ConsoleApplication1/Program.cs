@@ -5,35 +5,43 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
+    public delegate void MyDelegate(int sizeOfArray);
     class Program
     {
+        private static MyDelegate m_oMyDelegate = null;
         private static int[] num = new int[1];
         private static int index = 0;
         
         static void Main(string[] args)
-        {      
-            Console.WriteLine("Rozmiar: "+num.Length);
+        {
+            m_oMyDelegate += displaySizeOfArray;
+            m_oMyDelegate(num.Length);
             printArray();
             add(1);
-            Console.WriteLine("Rozmiar: " + num.Length);
+            m_oMyDelegate(num.Length);
             printArray();
             add(2);
-            Console.WriteLine("Rozmiar: " + num.Length);
+            m_oMyDelegate(num.Length);
             printArray();
             add(3);
-            Console.WriteLine("Rozmiar: " + num.Length);
+            m_oMyDelegate(num.Length);
             printArray();
             Console.WriteLine(getElement(2));
             setElement(2, 4);
-            Console.WriteLine("Rozmiar: " + num.Length);
+            m_oMyDelegate(num.Length);
             printArray();
             setElement(10, 4);
-            Console.WriteLine("Rozmiar: " + num.Length);
+            m_oMyDelegate(num.Length);
             printArray();
             add(3);
-            Console.WriteLine("Rozmiar: " + num.Length);
+            m_oMyDelegate(num.Length);
             printArray();
             Console.ReadLine();
+        }
+
+        static void displaySizeOfArray(int sizeOfArray)
+        {
+            Console.WriteLine("Rozmiar tablicy: " + sizeOfArray);
         }
 
         static void add(int value)
