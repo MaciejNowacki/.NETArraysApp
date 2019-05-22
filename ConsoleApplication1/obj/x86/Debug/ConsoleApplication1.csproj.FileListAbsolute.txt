@@ -8,3 +8,9 @@ C:\Users\dotnet-12\Desktop\.NETArraysApp\ConsoleApplication1\obj\x86\Debug\Conso
 C:\Users\dotnet-12\Desktop\.NETArraysApp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
 C:\Users\dotnet-12\Desktop\.NETArraysApp\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 C:\Users\dotnet-12\Desktop\.NETArraysApp\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Maciej\Desktop\NET\.NETArraysApp\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Maciej\Desktop\NET\.NETArraysApp\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Maciej\Desktop\NET\.NETArraysApp\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+C:\Users\Maciej\Desktop\NET\.NETArraysApp\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Maciej\Desktop\NET\.NETArraysApp\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Maciej\Desktop\NET\.NETArraysApp\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
